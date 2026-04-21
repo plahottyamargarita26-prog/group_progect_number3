@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 class Program
 {
-    static int[][] arr = null;
+    static int[] arr = null;
     static void Main(string[] args)
     {
         
@@ -11,9 +11,11 @@ class Program
         int choice;
         do
         {
-            Console.WriteLine("======================МЕНЮ========================");
-            Console.WriteLine("1. Варіант 6 (Батир)");
-            Console.WriteLine("2. Варіант 4 (Тестовий варіант для перевірки)");
+            Console.WriteLine("\n======================МЕНЮ========================");
+            Console.WriteLine("1. Варіант 6 (Батир Валерія)");
+            Console.WriteLine("2. Варіант 1 (Коваленко Дар'я)");
+            Console.WriteLine("3. Варіант 2 (Науменко Анастасія)");
+            Console.WriteLine("4. Варіант 3 (Плахоття Маргарита)");
             Console.WriteLine("0. Вихід");
 
             choice = int.Parse(Console.ReadLine());
@@ -29,12 +31,12 @@ class Program
                     ArrayUtils.WriteArr(arr);
                     break;
                 case 2:
-                    if (arr== null)
+                    if (arr == null)
                     {
                         arr = ArrayUtils.ChooseInputMethod();
                         ArrayUtils.WriteArr(arr);
                     }
-                    arr = ValeriaVar.DoBlock_2(arr);
+                    arr = ValeriaVar.DoBlock_1(arr); 
                     ArrayUtils.WriteArr(arr);
                     break;
                 case 0:

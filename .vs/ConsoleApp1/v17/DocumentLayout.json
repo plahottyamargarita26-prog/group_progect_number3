@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\programuvannya\\uniproject\\2 \u0441\u0435\u043C\u0435\u043C\u0442\u0440 1 \u043A\u0443\u0440\u0441\\\u041E\u043B\u0456\u043C\u043F_\u041F\u0406\\ConsoleApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\programuvannya\\uniproject\\2 \u0441\u0435\u043C\u0435\u043C\u0442\u0440 1 \u043A\u0443\u0440\u0441\\\u041E\u043B\u0456\u043C\u043F_\u041F\u0406\\ConsoleApp1\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{72F11CC9-3408-44D1-9384-1EEA17EF6572}|ConsoleApp1.csproj|d:\\programuvannya\\uniproject\\2 \u0441\u0435\u043C\u0435\u043C\u0442\u0440 1 \u043A\u0443\u0440\u0441\\\u043E\u043B\u0456\u043C\u043F_\u043F\u0456\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72F11CC9-3408-44D1-9384-1EEA17EF6572}|ConsoleApp1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\programuvannya\\uniproject\\2 \u0441\u0435\u043C\u0435\u043C\u0442\u0440 1 \u043A\u0443\u0440\u0441\\\u041E\u043B\u0456\u043C\u043F_\u041F\u0406\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-21T07:14:10.83Z",
               "EditorCaption": ""

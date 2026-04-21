@@ -4,15 +4,15 @@ using System.Linq;
 
 public static class ArrayUtils
 {
-    public static int[][] ChooseInputMethod()
+    public static int[] ChooseInputMethod()
     {
         int textchoice;
-        int[][] arr = null;
+        int[] arr = null;
         do
         {
             Console.WriteLine("Чудово! Для початку оберіть метод введення масиву:");
-            Console.WriteLine("Для введення зубчастого масиву самотужки введіть 1");
-            Console.WriteLine("Для введення зубчастого масиву за допомогою випадково згенерованих значень введіть 2");
+            Console.WriteLine("1. Ввести масив самотужки");
+            Console.WriteLine("2. Ввести масив рандомно");
             textchoice = int.Parse(Console.ReadLine());
             switch (textchoice)
             {
@@ -31,69 +31,50 @@ public static class ArrayUtils
         } while (textchoice != 1 && textchoice != 2);
         return arr;
     }
-    public static int[][] NonRanInput()
+    public static int[] NonRanInput()
     {
-        Console.WriteLine("Вкажіть кількість рядків зубчастого масиву:");
-        int n = int.Parse(Console.ReadLine());
-        int[][] arr = new int[n][];
-        Console.WriteLine("Введіть елементи зубчастого масиву.");
-        for (int i = 0; i < n; i++)
+        Console.WriteLine("Введіть масив");
+        string[] str = Console.ReadLine().Trim().Split();
+        int [] arr = new int[str.Length];
+        for (int j = 0; j < str.Length; j++)
         {
-            string[] str = Console.ReadLine().Trim().Split();
-            arr[i] = new int[str.Length];
-            for (int j = 0; j < str.Length; j++)
-            {
-                arr[i][j] = Convert.ToInt32(str[j]);
-            }
+            arr[j] = Convert.ToInt32(str[j]);
         }
         return arr;
     }
-    public static int[][] RanInput()
+    public static int[] RanInput()
     {
-        Console.WriteLine("Ваша кількість рядків випадкова чи введена власноруч?");
+        Console.WriteLine("Ваша кількість значень випадкова чи введена власноруч?");
         Console.WriteLine("Введіть 1 та кількість рядків якщо власноруч");
         Console.WriteLine("Введіть 2 та межі можливих значень (мінімальне та макcимальне) якщо випадкове");
         Random rndGen = new Random();
         int[] userinput = Console.ReadLine().Split().Select(int.Parse).ToArray();
-        int n;
+        int k=0;
         if (userinput[0] == 1)
-            n = userinput[1];
+            k = userinput[1];
         else
         {
-            n = rndGen.Next(userinput[1], userinput[2] + 1);
-            Console.WriteLine($"Випадково згенерована кількість рядків дорівнює: {n}");
+            k = rndGen.Next(userinput[1], userinput[2] + 1);
+            Console.WriteLine($"Випадково згенерована кількість значень у рядку дорівнює: {k}");
         }
-        int[][] arr = new int[n][];
-        Console.WriteLine("Введіть межі можливої кількості значень у одному рядку");
-        int[] kilk = Console.ReadLine().Split().Select(int.Parse).ToArray();
+        int[] arr = new int[k];
 
         Console.WriteLine("Введіть межі можливих випадкових значень");
         int[] num = Console.ReadLine().Split().Select(int.Parse).ToArray();
 
-        for (int i = 0; i < n; i++)
-        {
-            int k = rndGen.Next(kilk[0], kilk[1] + 1);
-            arr[i] = new int[k];
-            for (int j = 0; j < k; j++)
-                arr[i][j] = rndGen.Next(num[0], num[1] + 1);
-        }
+        for (int j = 0; j < k; j++)
+            arr[j] = rndGen.Next(num[0], num[1] + 1);
 
         return arr;
     }
-    public static void WriteArr(int[][] arr)
+    public static void WriteArr(int[] arr)
     {
         Console.WriteLine("Ваш масив:");
-        for (int i = 0; i < arr.Length; i++)
+        for (int j = 0; j < arr.Length; j++)
         {
-            for (int j = 0; j < arr[i].Length; j++)
-            {
-                Console.Write($"\t {arr[i][j]}");
-            }
-            Console.WriteLine("\n");
-
+            Console.Write($"\t {arr[j]}");
         }
+        Console.WriteLine();
     }
-
-
 
 }

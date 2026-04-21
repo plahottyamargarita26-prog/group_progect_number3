@@ -13,3 +13,17 @@ D:\programuvannya\uniproject\2 семемтр 1 курс\Олімп_ПІ\Console
 D:\programuvannya\uniproject\2 семемтр 1 курс\Олімп_ПІ\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.pdb
 D:\programuvannya\uniproject\2 семемтр 1 курс\Олімп_ПІ\ConsoleApp1\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
 D:\programuvannya\uniproject\2 семемтр 1 курс\Олімп_ПІ\ConsoleApp1\obj\Debug\net8.0\ref\ConsoleApp1.dll
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.dll
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\refint\ConsoleApp1.dll
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\bad\Desktop\group_progect_number3-main\bin\Debug\net8.0\ConsoleApp1.exe
+C:\Users\bad\Desktop\group_progect_number3-main\bin\Debug\net8.0\ConsoleApp1.deps.json
+C:\Users\bad\Desktop\group_progect_number3-main\bin\Debug\net8.0\ConsoleApp1.runtimeconfig.json
+C:\Users\bad\Desktop\group_progect_number3-main\bin\Debug\net8.0\ConsoleApp1.dll
+C:\Users\bad\Desktop\group_progect_number3-main\bin\Debug\net8.0\ConsoleApp1.pdb
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\bad\Desktop\group_progect_number3-main\obj\Debug\net8.0\ref\ConsoleApp1.dll
