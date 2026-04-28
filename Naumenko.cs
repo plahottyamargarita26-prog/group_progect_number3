@@ -45,7 +45,7 @@ namespace ArrayApp
             Console.Write("Введіть кількість T (скільки видалити): ");
             int t = int.Parse(Console.ReadLine());
 
-            Execute(ref array1D, k, t);
+             Naumenko_blok1(ref array1D, k, t);
 
             Console.WriteLine("Результат:");
             Show(array1D);
@@ -94,7 +94,7 @@ namespace ArrayApp
             return a;
         }
 
-        public static void Execute(ref int[] a, int k, int t)
+        public static void Naumenko_blok1(ref int[] a, int k, int t)
         {
             if (a == null || k < 0 || t < 0 || k + t > a.Length)
             {
