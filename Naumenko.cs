@@ -7,32 +7,6 @@ namespace ArrayApp
         static void Main()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            bool exit = false;
-
-            do
-            {
-                Console.WriteLine("\n1 - Блок 1 (Одновимірний масив: видалення)");
-                Console.WriteLine("0 - Вихід");
-                Console.Write("Ваш вибір: ");
-
-                string choice = Console.ReadLine();
-
-                switch (choice)
-                {
-                    case "1":
-                        RunFirstBlock();
-                        break;
-                    case "0":
-                        exit = true;
-                        break;
-                    default:
-                        Console.WriteLine("Помилка: такого пункту немає. Натисніть Enter...");
-                        Console.ReadLine();
-                        break;
-                }
-
-            } while (!exit);
-        }
 
         static void RunFirstBlock()
         {
