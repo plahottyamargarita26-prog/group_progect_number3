@@ -4,13 +4,11 @@ namespace ArrayApp
 {
     class Program
     {
-        static void Main()
-        {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
         static void RunFirstBlock()
         {
-            Console.WriteLine("ВИКОНАННЯ БЛОКУ 1");
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine("ВИКОНАННЯ БЛОКУ 1(Науменко)");
 
             int[] array1D = Choose();
 
@@ -28,46 +26,8 @@ namespace ArrayApp
             Console.ReadLine();
         }
 
-        public static int[] Choose()
-        {
-            Console.WriteLine("Оберіть спосіб заповнення: 1 - Вручну, 2 - Рандом:");
-            string c = Console.ReadLine();
-            if (c == "1")
-            {
-                return Manual();
-            }
-            else
-            {
-                return RandomArray(); 
-            }
-        }
 
-        public static int[] Manual()
-        {
-            Console.Write("Кількість елементів: ");
-            int n = int.Parse(Console.ReadLine());
-            int[] a = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write($"a[{i}] = ");
-                a[i] = int.Parse(Console.ReadLine());
-            }
-            return a;
-        }
-
-        public static int[] RandomArray()
-        {
-            Random r = new Random();
-            Console.Write("Кількість елементів: ");
-            int n = int.Parse(Console.ReadLine());
-            int[] a = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                a[i] = r.Next(-100, 101);
-            }
-            return a;
-        }
-
+   
         public static void Naumenko_blok1(ref int[] a, int k, int t)
         {
             if (a == null || k < 0 || t < 0 || k + t > a.Length)
@@ -84,18 +44,12 @@ namespace ArrayApp
             Array.Resize(ref a, a.Length - t);
         }
 
-        public static void Show(int[] a)
-        {
+      
             if (a == null || a.Length == 0)
             {
                 Console.WriteLine("Масив порожній.");
                 return;
             }
-            foreach (int x in a)
-            {
-                Console.Write(x + " ");
-            }
-            Console.WriteLine();
+
         }
     }
-}
