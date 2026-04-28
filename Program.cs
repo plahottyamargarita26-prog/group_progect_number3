@@ -11,12 +11,12 @@ class Program
         int choice;
         do
         {
-            Console.WriteLine("\n======================ÌÅÍÞ========================");
-            Console.WriteLine("1. Âàð³àíò 6 (Áàòèð Âàëåð³ÿ)");
-            Console.WriteLine("2. Âàð³àíò 1 (Êîâàëåíêî Äàð'ÿ)");
-            Console.WriteLine("3. Âàð³àíò 2 (Íàóìåíêî Àíàñòàñ³ÿ)");
-            Console.WriteLine("4. Âàð³àíò 3 (Ïëàõîòòÿ Ìàðãàðèòà)");
-            Console.WriteLine("0. Âèõ³ä");
+            Console.WriteLine("\n======================МЕНЮ========================");
+            Console.WriteLine("1. Варіант 6 (Батир Валерія)");
+            Console.WriteLine("2. Варіант 1 (Коваленко Дар'я)");
+            Console.WriteLine("3. Варіант 2 (Науменко Анастасія)");
+            Console.WriteLine("4. Варіант 3 (Плахоття Маргарита)");
+            Console.WriteLine("0. Вихід");
 
             choice = int.Parse(Console.ReadLine());
             switch (choice)
@@ -27,7 +27,7 @@ class Program
                         arr = ArrayUtils.ChooseInputMethod();
                         ArrayUtils.WriteArr(arr);
                     }
-                    arr = ValeriaVar.DoBlock_1(arr); //íå âî¿ä ùîá ìîæíà áóëî âçÿòè çì³íåíèé ìàñèâ. ÿêùî âî¿ä òî ìàñèâ â ìåéí³ íå çì³íèòüñÿ (ìîæíà ðåô çâ³ñíî àëå âñå îäíî ïðèñâîþºìî çíà÷åííÿ îäíîãî ìàñèâà ³íøîìó òî íå çíàþ)
+                    arr = ValeriaVar.DoBlock_1(arr);
                     ArrayUtils.WriteArr(arr);
                     break;
                 case 2:
@@ -58,11 +58,11 @@ class Program
                     ArrayUtils.WriteArr(arr);
                     break;
                 case 0:
-                    Console.WriteLine("Çàðàç çàâåðøèìî, ò³ëüêè íàòèñí³òü áóäü ëàñêà ùå ðàç Enter");
+                    Console.WriteLine("Зараз завершимо, тільки натисніть будь ласка ще раз Enter");
                     Console.ReadLine();
                     break;
                 default:
-                    Console.WriteLine("Êîìàíäà ``{0}'' íå ðîçï³çíàíà. Çðîá³òü, áóäü ëàñêà, âèá³ð ³ç 1, 2, 0.", choice);
+                    Console.WriteLine("Команда ``{0}'' не розпізнана. Зробіть, будь ласка, вибір із 1, 2, 0.", choice);
                     break;
             }
         } while (choice != 0);
