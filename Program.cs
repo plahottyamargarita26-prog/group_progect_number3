@@ -36,7 +36,7 @@ class Program
                         arr = ArrayUtils.ChooseInputMethod();
                         ArrayUtils.WriteArr(arr);
                     }
-                    arr = Naumenko_blok1(arr); 
+                    arr = Naumenko_blok1(ref arr); 
                     ArrayUtils.WriteArr(arr);
                     break;
                 case 0:
