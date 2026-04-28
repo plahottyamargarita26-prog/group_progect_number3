@@ -48,6 +48,15 @@ class Program
                     arr = Naumenko_blok1(ref arr); 
                     ArrayUtils.WriteArr(arr);
                     break;
+                    case 4:
+                     if (arr == null)
+                    {
+                     arr = ArrayUtils.ChooseInputMethod();
+                    ArrayUtils.WriteArr(arr);
+                    }
+                    arr = MargaritaVar.DoBlock_1(arr); 
+                    ArrayUtils.WriteArr(arr);
+                    break;
                 case 0:
                     Console.WriteLine("Çàðàç çàâåðøèìî, ò³ëüêè íàòèñí³òü áóäü ëàñêà ùå ðàç Enter");
                     Console.ReadLine();
