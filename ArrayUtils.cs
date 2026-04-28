@@ -45,7 +45,7 @@ public static class ArrayUtils
     public static int[] RanInput()
     {
         Console.WriteLine("Ваша кількість значень випадкова чи введена власноруч?");
-        Console.WriteLine("Введіть 1 та кількість рядків якщо власноруч");
+        Console.WriteLine("Введіть 1 та кількість якщо власноруч");
         Console.WriteLine("Введіть 2 та межі можливих значень (мінімальне та макcимальне) якщо випадкове");
         Random rndGen = new Random();
         int[] userinput = Console.ReadLine().Split().Select(int.Parse).ToArray();
