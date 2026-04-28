@@ -5,7 +5,7 @@ namespace ArrayApp
     class Program
     {
 
-        static void RunFirstBlock()
+        public static void Naumenko_blok1(ref int[] a, int k, int t)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("ВИКОНАННЯ БЛОКУ 1(Науменко)");
@@ -17,19 +17,7 @@ namespace ArrayApp
             Console.Write("Введіть кількість T (скільки видалити): ");
             int t = int.Parse(Console.ReadLine());
 
-             Naumenko_blok1(ref array1D, k, t);
-
-            Console.WriteLine("Результат:");
-            Show(array1D);
-
-            Console.WriteLine("Натисніть Enter...");
             Console.ReadLine();
-        }
-
-
-   
-        public static void Naumenko_blok1(ref int[] a, int k, int t)
-        {
             if (a == null || k < 0 || t < 0 || k + t > a.Length)
             {
                 Console.WriteLine("Помилка: некоректні параметри видалення.");
@@ -44,12 +32,6 @@ namespace ArrayApp
             Array.Resize(ref a, a.Length - t);
         }
 
-      
-            if (a == null || a.Length == 0)
-            {
-                Console.WriteLine("Масив порожній.");
-                return;
-            }
 
         }
     }
