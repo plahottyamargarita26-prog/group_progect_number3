@@ -5,7 +5,8 @@ public static class MargaritaVar
 {
 	public static int [] DoBlock_1(int [] arr)
 	{
-		int[] input = ArrayUtils.ChooseInputMethod();
+        Console.WriteLine("Вставити в початок масиву мінімум з усіх значень масиву, а в кінець — максимум");
+        int[] input = arr;
             int min = input[0];
             int max = input[0];
             for (int i = 0; i < input.Length; i++)

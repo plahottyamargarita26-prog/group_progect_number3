@@ -1,27 +1,27 @@
-п»їusing System;
+using System;
 
 namespace ArrayApp
 {
     class Program
     {
-
-        public static void Naumenko_blok1(ref int[] a, int k, int t)
+        public static int[] Naumenko_blok1(ref int[] a)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine("Р’РРљРћРќРђРќРќРЇ Р‘Р›РћРљРЈ 1(РќР°СѓРјРµРЅРєРѕ)");
+            Console.WriteLine("ВИКОНАННЯ БЛОКУ 1(Науменко)");
+            Console.WriteLine("Знищити T елементів, починаючи з номеру К (лише якщо всі такі елементи фактично є в масиві)");
 
-            int[] array1D = Choose();
+            int[] array1D = a;
 
-            Console.Write("Р’РІРµРґС–С‚СЊ С–РЅРґРµРєСЃ K (Р· СЏРєРѕРіРѕ РІРёРґР°Р»СЏС‚Рё): ");
+            Console.Write("Введіть індекс K (з якого видаляти): ");
             int k = int.Parse(Console.ReadLine());
-            Console.Write("Р’РІРµРґС–С‚СЊ РєС–Р»СЊРєС–СЃС‚СЊ T (СЃРєС–Р»СЊРєРё РІРёРґР°Р»РёС‚Рё): ");
+            Console.Write("Введіть кількість T (скільки видалити): ");
             int t = int.Parse(Console.ReadLine());
 
-            Console.ReadLine();
+
             if (a == null || k < 0 || t < 0 || k + t > a.Length)
             {
-                Console.WriteLine("РџРѕРјРёР»РєР°: РЅРµРєРѕСЂРµРєС‚РЅС– РїР°СЂР°РјРµС‚СЂРё РІРёРґР°Р»РµРЅРЅСЏ.");
-                return;
+                Console.WriteLine("Помилка: некоректні параметри видалення.");
+                return a;
             }
 
             for (int i = k; i < a.Length - t; i++)
@@ -30,8 +30,8 @@ namespace ArrayApp
             }
 
             Array.Resize(ref a, a.Length - t);
-        }
-
-
+            return a;
         }
     }
+
+}
